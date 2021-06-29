@@ -1,0 +1,79 @@
+<!doctype html>
+<html ng-app="bookApp">
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+        <style>
+            #hh{
+                margin: 0px;
+                background-color: #330099;
+                font-size: 50px;
+                color:rgb(245, 204, 224);
+                height:200px;
+                width:1485px;
+                text-align:left;
+                width:  100%;
+  height: 150px;
+                
+            }
+        
+            div{
+                margin: 0px;
+                position: center;
+                font-size: 30px;
+                color:rgb(255, 255, 255);
+               position:center;
+               box-sizing: border-box;
+                
+                background-color:#10131b;
+                width:  100%;
+  height: 1000px;
+                      
+            } 
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color:#333399;
+              width:  100%;
+  height: 1000%;
+            } 
+            li {
+              float: left;
+            }
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            li a:hover:not(.active) {
+              background-color: #111;
+            }
+            .active {
+              background-color: #04AA6D;
+            }
+            </style>
+    </head>
+    <body>
+        <p id="hh"><br>BooksApplication</p>
+      <ul>
+        
+      <li><a href="#/">Home</a><li>
+       
+        <li> <a href="#/books">BooksPage</a><li>
+            <li> <a href="#/authors">Authors</a><li>
+                <li>    <a href="#/popularBooks">Popularbooks</a></li>
+                    <li> <a href="#/contact">Contact</a></li>
+</ul>
+
+
+
+
+
+        <div ng-view></div>
+        <script src="app.js"></script>
+    </body>
+    </html>
